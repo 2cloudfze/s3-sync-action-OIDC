@@ -1,4 +1,3 @@
-
 #!/bin/sh
 set -e
 # GitHub Actions inputs are passed as environment variables with INPUT_ prefix and uppercase
