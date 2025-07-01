@@ -1,6 +1,6 @@
-name: "S3 Sync Metadata (OIDC)"
-description: "Sync HTML files to an AWS S3 bucket with proper content-type using OIDC"
-author: minhaj2cloud
+name: "S3 Sync (OIDC)"
+description: "Sync a directory to an AWS S3 bucket using OIDC"
+author: yourname
 runs:
   using: docker
   image: Dockerfile
@@ -23,11 +23,3 @@ inputs:
   aws_s3_bucket:
     description: "Target S3 bucket"
     required: true
-  content_type:
-    description: "Content-type to set for files"
-    required: false
-    default: "text/html"
-  exclude_pattern:
-    description: "File pattern to exclude"
-    required: false
-    default: "*.*"
